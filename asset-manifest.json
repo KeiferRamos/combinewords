@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/combinewords/static/css/main.9f9300fc.css",
+    "main.js": "/combinewords/static/js/main.6d042f59.js",
+    "index.html": "/combinewords/index.html",
+    "main.9f9300fc.css.map": "/combinewords/static/css/main.9f9300fc.css.map",
+    "main.6d042f59.js.map": "/combinewords/static/js/main.6d042f59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f9300fc.css",
+    "static/js/main.6d042f59.js"
+  ]
+}
