@@ -1,0 +1,38 @@
+.helper {
+  height: 60px;
+  width: 100%;
+  gap: 5px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.helper > div:not(:first-child) {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #508f99;
+  color: #194342;
+  display: grid;
+  place-items: center;
+}
+
+.helper > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+  color: #fff;
+  gap: 5px;
+  height: 40px;
+  padding: 0 5px;
+  width: 75px;
+  border: 1px solid gold;
+}
+
+.modal-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

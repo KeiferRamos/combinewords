@@ -1,0 +1,25 @@
+.answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.answer-char {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-bottom: 2px solid #548188;
+  font-weight: bolder;
+  color: #57aec4;
+  cursor: pointer;
+}
+
+.hint {
+  background: #3a5f6d;
+  border: none;
+}

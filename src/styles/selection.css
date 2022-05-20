@@ -1,0 +1,29 @@
+.selection {
+  width: 100%;
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.enabled,
+.disabled {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.enabled {
+  background: #3a7881;
+  color: #aad3d8;
+}
+
+.disabled {
+  color: #788789;
+  background: #bac6c7;
+}

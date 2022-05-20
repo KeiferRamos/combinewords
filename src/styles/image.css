@@ -1,0 +1,16 @@
+.image-display {
+  margin-bottom: 20px;
+  gap: 5px;
+  font-size: 20px;
+  color: #aad3d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-display > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
