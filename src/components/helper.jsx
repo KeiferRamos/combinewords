@@ -52,7 +52,7 @@ function Helper({
 
   const refresh = () => {
     for (var i = 0; i < userAnswer.length; i++) {
-      if (!hints.includes(i)) {
+      if (!hints.includes(i) && userAnswer[i].text) {
         dispatch({
           type: REMOVE_DISABLED,
           payload: userAnswer[i].origIndex,

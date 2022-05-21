@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/next.css";
 import { connect } from "react-redux";
 import { FcLike } from "react-icons/fc";
-import { FaPlus } from "react-icons/fa";
 
 function Next({ startNextLevel, images, answer }) {
   return (
