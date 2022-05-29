@@ -24,6 +24,8 @@ function Helper({
   correctIndex,
   userAnswer,
 }) {
+  const [errorMSG, setErrorMSG] = useState(false);
+
   const getHint = () => {
     if (userCoins >= 50) {
       let hint = getRandomHint(answerIndex);
@@ -44,9 +46,9 @@ function Helper({
           payload: userAnswer[hint].origIndex,
         });
         dispatch({ type: ADD_HINT, payload: hint });
-      } else {
-        return;
       }
+    } else {
+      setErrorMSG(true);
     }
   };
 
@@ -93,18 +95,32 @@ function Helper({
     }
   }, [hints]);
 
+  const closeMsg = ({ target }) => {
+    if (target.className == "error-msg") {
+      setErrorMSG(false);
+    }
+  };
+
   return (
-    <div className="helper">
+    <div className="game-helper">
       <div>
         <FcLike />
         <p>{userCoins}</p>
       </div>
-      <div onClick={() => getHint()}>
+      <div className="helper" onClick={() => getHint()}>
         <FaLightbulb />
       </div>
-      <div onClick={() => refresh()}>
+      <div className="helper" onClick={() => refresh()}>
         <FaRedoAlt />
       </div>
+      {errorMSG && (
+        <div className="error-msg" onClick={(e) => closeMsg({ ...e })}>
+          <div>
+            <p>you don't have enough coins left!</p>
+            <button onClick={() => setErrorMSG(false)}>OK</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

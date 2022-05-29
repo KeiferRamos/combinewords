@@ -1,4 +1,4 @@
-.helper {
+.game-helper {
   height: 60px;
   width: 100%;
   gap: 5px;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.helper > div:not(:first-child) {
+.helper {
   width: 40px;
   height: 40px;
   border-radius: 3px;
@@ -17,7 +17,7 @@
   place-items: center;
 }
 
-.helper > div:first-child {
+.game-helper > div:first-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,9 +30,27 @@
   border: 1px solid gold;
 }
 
-.modal-message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.error-msg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.error-msg > div {
+  text-align: center;
+  background: #194342;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.error-msg div > button {
+  padding: 5px 10px;
+  border: none;
+  margin-top: 10px;
 }
