@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/combinewords/static/css/main.472e97f6.css",
-    "main.js": "/combinewords/static/js/main.82d66113.js",
+    "main.js": "/combinewords/static/js/main.e629f0e0.js",
     "index.html": "/combinewords/index.html",
     "main.472e97f6.css.map": "/combinewords/static/css/main.472e97f6.css.map",
-    "main.82d66113.js.map": "/combinewords/static/js/main.82d66113.js.map"
+    "main.e629f0e0.js.map": "/combinewords/static/js/main.e629f0e0.js.map"
   },
   "entrypoints": [
     "static/css/main.472e97f6.css",
-    "static/js/main.82d66113.js"
+    "static/js/main.e629f0e0.js"
   ]
 }
