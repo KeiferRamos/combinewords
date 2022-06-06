@@ -24,7 +24,7 @@ function Answer({ answer, userAnswer, dispatch, hints }) {
 
 function SingleChar({ i, userAnswer, dispatch, hints }) {
   const removeChar = () => {
-    if (hints.includes(i)) {
+    if (hints.includes(i) || !userAnswer[i].text) {
       return;
     }
     dispatch({ type: REMOVE_CHAR, payload: i });
